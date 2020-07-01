@@ -1,0 +1,42 @@
+body{
+    background-image: linear-gradient(#F5FFC6,#C1FF9B);
+}
+
+.navbar{
+    background-color: #B4E1FF;
+}
+header{
+    font-size: 50px;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.hamburgler{
+    background-color: grey;
+    border: black;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 20px 48px;
+    font-size: 15px;
+    cursor: pointer;
+    float: right;
+    display: block
+}
+
+.hamburgler button:not(:last-child) {
+    border-right: none;
+}
+
+.hamburgler:after{
+    content:"";
+    clear: both;
+    display: table;
+}
+
+h1{
+    text-align: center;
+    color: red
+    }
