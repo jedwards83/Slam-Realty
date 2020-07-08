@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(#F5FFC6,#C1FF9B);
+    background-image: linear-gradient(to left,#F5FFC6,#C1FF9B);
 }
 
 .navbar{
@@ -40,3 +40,16 @@ h1{
     text-align: center;
     color: red
     }
+
+.active{
+    background-color: grey;
+    border: white;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 20px 48px;
+    font-size: 15px;
+    cursor: pointer;
+    float: right;
+    display: block
+}
