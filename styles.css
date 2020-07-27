@@ -1,16 +1,34 @@
 body{
-    background-image: linear-gradient(to left,#F5FFC6,#C1FF9B);
+    background-image: url("Clouds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navbar{
     background-color: #B4E1FF;
+    border-radius: 25px;
+    float: left
 }
+
+#navIcons{
+    background-color: #B4E1FF;
+    border-radius: 25px;
+    float: right
+}
+
+.navbar::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
 header{
     font-size: 50px;
     color: black;
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     display: inline-block;
+    margin-left: 50px;
 }
 
 .hamburgler{
@@ -41,7 +59,7 @@ h1{
     color: red
     }
 
-.active{
+.active2{
     background-color: grey;
     border: white;
     color: black;
@@ -52,4 +70,115 @@ h1{
     cursor: pointer;
     float: right;
     display: block
+}
+
+/*.row{
+    display: flex;
+}
+
+.column{
+    flex: 50%;
+    padding: 5px;
+}
+
+*/
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column{
+    float: left;
+    width: 24%;
+    padding: 5px
+    
+}
+
+@media only screen and (max-width: 700px) {
+    .column {
+        width: 49.99999%;
+        margin: 6px 0;
+            }
+}
+
+@media only screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+            }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page 
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: bottom;
+  float: right;
+}
+
+/* Add styles to the form container */
+/*
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+/*
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+/*
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+/*
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+*/
+/* Add a red background color to the cancel button */
+/*
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+/*
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+*/
+
+p3 {
+    position: absolute;
+    bottom: 0;
 }
