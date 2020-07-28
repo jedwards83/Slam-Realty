@@ -15,24 +15,40 @@
 
 <!--Navbar for Business Logo And Nav Buttons-->
 <body>
-    <div id="bg-image">
-    </div>
+    <div id="bg-image"></div>
     <div class="navbar" id="mainNav">
         <header>SLAM Realty</header>
-        <div class="navIcons" id="navIcons"
+        <div class="navIcons" id="navIcons">
             <a href="pages/contact.html"><button type="submit" class="hamburgler">Contact Us</button></a>
             <a href="pages/investors.html"><button type="submit" class="hamburgler">Investors</button></a>
             <a href="pages/sellers.html"><button type="submit" class="hamburgler">Sellers</button></a>
             <a href="pages/buyers.html"><button type="submit" class="hamburgler">Buyers</button></a>
             <a href="index.html"><button type="submit" class="active2">Home</button></a>
-     </div>
+        </div>
     </div>
 
 <div class="row">
     <div class="column">
         <img src="Selling.jpg" alt="Selling" style="width:100%" class="image">
         <div class="middle">
-            <button type="Submit" class="formcreate" id="sellForm">I want to Sell!</button>
+            <button onclick="openform()" class="formcreate" id="sellForm">I want to Sell!</button>
+            <form action="/action_page.php" class="form-container">
+                <label for="firstName"><b>First Name</b></label>
+                <input type="text" placeholder="Enter First Name" name="firstName" required class="textField"><br>
+
+                <label for="lastName"><b>Last Name</b></label>
+                <input type="text" placeholder="Enter Last Name" name="lastName" required class="textField"><br>
+
+                <label for="phone"><b>Phone Number</b></label>
+                <input type="text" placeholder="Enter Best Number to Reach You" name="phone" required class="textField"><br>
+
+                <label for="email"><b>Email Adress</b></label>
+                <input type="text" placeholder="Enter Your Email" name="email" required class="textField"><br>
+                
+                <button type="submit" class="btn">Submit</button>
+                <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+
+            </form>
         </div>
     </div>
     <div class="column">
