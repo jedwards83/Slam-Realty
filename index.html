@@ -3,7 +3,9 @@
 <head>
     <title>Slam Realty LLC</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"?>
+    
 
     <script src="realty.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -15,15 +17,18 @@
 
 <!--Navbar for Business Logo And Nav Buttons-->
 <body>
+    <header>SLAM Realty</header>
     <div id="bg-image"></div>
     <div class="navbar" id="mainNav">
-        <header>SLAM Realty</header>
-        <div class="navIcons" id="navIcons">
-            <a href="pages/contact.html"><button type="submit" class="hamburgler">Contact Us</button></a>
-            <a href="pages/investors.html"><button type="submit" class="hamburgler">Investors</button></a>
-            <a href="pages/sellers.html"><button type="submit" class="hamburgler">Sellers</button></a>
-            <a href="pages/buyers.html"><button type="submit" class="hamburgler">Buyers</button></a>
-            <a href="index.html"><button type="submit" class="active2">Home</button></a>
+              <div class="navIcons" id="navIcons">
+                <a href="index.html" class="active"> Home</a>
+                <a href="pages/buyers.html">Buyers</a>
+                <a href="pages/sellers.html">Sellers</a>
+                <a href="pages/investors.html">Investors</a>
+                <a href="pages/contact.html">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myMenu()">
+             <i class="fa fa-bars"></i>
+            </a>
         </div>
     </div>
 

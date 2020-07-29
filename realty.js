@@ -37,3 +37,12 @@ function openForm1() {
     document.getElementById("openInvestorForm").style.display = "none";
     document.getElementById("closeInvestorForm").style.display = "block";
   }
+
+  function myMenu() {
+      var x = document.getElementById("mainNav");
+      if (x.className === "navBar") {
+          x.className += " responsive";
+      } else {
+          x.className = "navBar";
+      }
+    }
