@@ -9,12 +9,12 @@
 
 
 
-<!--Navbar for Business Logo And Nav Buttons-->
+
 <body>
     <header>SLAM Realty</header>
     <div id="bg-image"></div>
-    <div class="navbar" id="mainNav">
-              <div class="navIcons" id="navIcons">
+    <!--Responsive NavBar-->
+    <div class="navBar" id="mainNav">
                 <a href="" class="active"> Home</a>
                 <a href="">Buyers</a>
                 <a href="">Sellers</a>
@@ -26,11 +26,13 @@
         </div>
     </div>
 
+<!--Parent Container to hold images with flex in 2 columns. Changes to 1 at 500px-->
 <div class="row">
+    <!--Container For Selling Form-->
     <div class="column">
         <img src="Selling.jpg" alt="Selling" style="width:100%" class="image">
         <div class="middle">
-            <button onclick="openForm1()" class="formcreate" id="closeSellForm">I want to Sell!</button>
+            <button onclick="openSellerContactForm()" class="formcreate" id="closeSellForm">I want to Sell!</button>
             <form class="form-container" id="openSellForm">
                 <label for="firstName"><b>First Name</b></label>
                 <input type="text" placeholder="Enter First Name" name="firstName" required class="textField"><br>
@@ -42,20 +44,21 @@
                 <input type="text" placeholder="Enter Best Number to Reach You" name="phone" required class="textField"><br>
 
                 <label for="email"><b>Email Address</b></label>
-                <input type="text" placeholder="Enter Your Email" name="email" required class="textField"><br>
+                <input type="email" placeholder="Enter Your Email" name="email" required class="textField"><br>
                 
                 <label for="forSale"><b>Selling Address</b></label>
                 <input type="text" placeholder="Enter The Address You Want to Sell" name="email" required class="textField"><br>
 
                 <button type="submit" class="btn">Submit</button>
-                <button type="submit" class="btn cancel" onclick="closeForm1()">Close</button>
+                <button type="submit" class="btn cancel" onclick="closeSellerContactForm()">Close</button>
             </form>
         </div>
     </div>
+    <!--Container For Buying Form-->
     <div class="column">
         <img src="Buying.jpg" alt="Buying" style="width:100%" class="image">
         <div class="middle">
-            <button onclick="openForm2()" class="formcreate" id="closeBuyForm">I want to Buy!</button>
+            <button onclick="openBuyerContactForm()" class="formcreate" id="closeBuyForm">I want to Buy!</button>
             <form class="form-container" id="openBuyForm">
                 <label for="firstName"><b>First Name</b></label>
                 <input type="text" placeholder="Enter First Name" name="firstName" required class="textField"><br>
@@ -67,20 +70,21 @@
                 <input type="text" placeholder="Enter Best Number to Reach You" name="phone" required class="textField"><br>
 
                 <label for="email"><b>Email Address</b></label>
-                <input type="text" placeholder="Enter Your Email" name="email" required class="textField"><br>
+                <input type="email" placeholder="Enter Your Email" name="email" required class="textField"><br>
                 
                 <label for="price"><b>Price Range</b></label>
                 <input type="text" placeholder="What is your Price Range?" name="price" required class="textField"><br>
 
                 <button type="submit" class="btn">Submit</button>
-                <button type="submit" class="btn cancel" onclick="closeForm2()">Close</button>
+                <button type="submit" class="btn cancel" onclick="closeBuyerContactForm()">Close</button>
             </form>
         </div>
     </div>
+    <!--Container For Renting Form-->
     <div class="column">
         <img src="Renting.jpg" alt="Renting" style="width:100%" class="image">
         <div class="middle">
-            <button onclick="openForm3()" class="formcreate" id="closeRentalForm">I need a Rental House!</button>
+            <button onclick="openRenterContactForm()" class="formcreate" id="closeRentalForm">I need a Rental House!</button>
             <form class="form-container" id="openRentalForm">
                 <label for="firstName"><b>First Name</b></label>
                 <input type="text" placeholder="Enter First Name" name="firstName" required class="textField"><br>
@@ -92,20 +96,21 @@
                 <input type="text" placeholder="Enter Best Number to Reach You" name="phone" required class="textField"><br>
 
                 <label for="email"><b>Email Address</b></label>
-                <input type="text" placeholder="Enter Your Email" name="email" required class="textField"><br>
+                <input type="email" placeholder="Enter Your Email" name="email" required class="textField"><br>
                 
                 <label for="price"><b>Price Range</b></label>
                 <input type="text" placeholder="What is your Budget for Rent?" name="price" required class="textField"><br>
 
                 <button type="submit" class="btn">Submit</button>
-                <button type="submit" class="btn cancel" onclick="closeForm3()">Close</button>
+                <button type="submit" class="btn cancel" onclick="closeRenterContactForm()">Close</button>
             </form>
         </div>
     </div>
+    <!--Container For Investors Form-->
     <div class="column">
         <img src="Investors.jpg" alt="Investing" style="width:100%" class="image">
         <div class="middle">
-            <button onclick="openForm4()" class="formcreate" id="closeInvestorForm">I Would Like to Invest!</button>
+            <button onclick="openInvestorContactForm()" class="formcreate" id="closeInvestorForm">I Would Like to Invest!</button>
             <form class="form-container" id="openInvestorForm">
                 <label for="firstName"><b>First Name</b></label>
                 <input type="text" placeholder="Enter First Name" name="firstName" required class="textField"><br>
@@ -117,26 +122,26 @@
                 <input type="text" placeholder="Enter Best Number to Reach You" name="phone" required class="textField"><br>
 
                 <label for="email"><b>Email Address</b></label>
-                <input type="text" placeholder="Enter Your Email" name="email" required class="textField"><br>
+                <input type="email" placeholder="Enter Your Email" name="email" required class="textField"><br>
                 
                 <label for="price"><b>Price Range</b></label>
                 <input type="text" placeholder="How much are you Investing?" name="amount" required class="textField"><br>
 
                 <button type="submit" class="btn">Submit</button>
-                <button type="submit" class="btn cancel" onclick="closeForm4()">Close</button>
+                <button type="submit" class="btn cancel" onclick="closeInvestorContactForm()">Close</button>
             </form>
         </div>
     </div>
 </div>
 
-<!--Insert Testimonials of clients who have used the product. Or more stylized pictures of House remodel-->
 
-    
+<!--Javascript sources-->
 
 <script src="realty.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
+<!--Contains all interactive contact information and bottom of page-->
 <div class="bottomtext">
     <p3 class="#contact">Contact us at SlamRealtyLLC<br>
         Phone: <a href="tel:+8888888888">888-888-8888</a><br>
@@ -145,8 +150,6 @@
     </p3>
 </div>
 </body>
-
-
 
 
 

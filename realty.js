@@ -1,42 +1,62 @@
-function openForm1() {
+/*Unfortunate DRY Javascript for the buttons to open forms Still working how to build a proper call for unique forms in one function*/
+function openSellerContactForm() {
+    if(window.screen.width < 1200){
+        true
+        }
+        else {
     document.getElementById("openSellForm").style.display = "block";
     document.getElementById("closeSellForm").style.display = "none";
   }
-  
-  function closeForm1() {
+}
+
+  function closeSellerContactForm() {
     document.getElementById("openSellForm").style.display = "none";
     document.getElementById("closeSellForm").style.display = "block";
   }
 
-  function openForm2() {
-    document.getElementById("openBuyForm").style.display = "block";
-    document.getElementById("closeBuyForm").style.display = "none";
+  function openBuyerContactForm() {
+    if(window.screen.width <1200){
+        true
+        }
+        else {
+    document.getElementById("openSellForm").style.display = "block";
+    document.getElementById("closeSellForm").style.display = "none";
   }
-  
-  function closeForm2() {
+}
+  function closeBuyerContactForm() {
     document.getElementById("openBuyForm").style.display = "none";
     document.getElementById("closeBuyForm").style.display = "block";
   }
 
-  function openForm3() {
+  function openRenterContactForm() {
+    if(window.screen.width < 1200){
+        true
+        }
+        else {
     document.getElementById("openRentalForm").style.display = "block";
     document.getElementById("closeRentalForm").style.display = "none";
   }
-  
-  function closeForm3() {
+}
+  function closeRenterContactForm() {
     document.getElementById("openRentalForm").style.display = "none";
     document.getElementById("closeRentalForm").style.display = "block";
   }
 
-  function openForm4() {
+  function openInvestorContactForm() {
+    if(window.screen.width < 1200){
+        true
+        }
+        else {
     document.getElementById("openInvestorForm").style.display = "block";
     document.getElementById("closeInvestorForm").style.display = "none";
   }
-  
-  function closeForm4() {
+} 
+  function closeInvestorContactForm() {
     document.getElementById("openInvestorForm").style.display = "none";
     document.getElementById("closeInvestorForm").style.display = "block";
   }
+
+  /*Responsive NavBar*/
 
   function myMenu() {
       var x = document.getElementById("mainNav");
