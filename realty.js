@@ -1,6 +1,6 @@
 /*Unfortunate DRY Javascript for the buttons to open forms Still working how to build a proper call for unique forms in one function*/
 function openSellerContactForm() {
-    if(window.screen.width < 1200){
+    if(window.screen.width <=600) {
         true
         }
         else {
@@ -8,19 +8,18 @@ function openSellerContactForm() {
     document.getElementById("closeSellForm").style.display = "none";
   }
 }
-
   function closeSellerContactForm() {
     document.getElementById("openSellForm").style.display = "none";
     document.getElementById("closeSellForm").style.display = "block";
   }
 
   function openBuyerContactForm() {
-    if(window.screen.width <1200){
+    if(window.screen.width <=600){
         true
         }
         else {
-    document.getElementById("openSellForm").style.display = "block";
-    document.getElementById("closeSellForm").style.display = "none";
+    document.getElementById("openBuyForm").style.display = "block";
+    document.getElementById("closeBuyForm").style.display = "none";
   }
 }
   function closeBuyerContactForm() {
@@ -29,7 +28,7 @@ function openSellerContactForm() {
   }
 
   function openRenterContactForm() {
-    if(window.screen.width < 1200){
+    if(window.screen.width <=600){
         true
         }
         else {
@@ -43,14 +42,15 @@ function openSellerContactForm() {
   }
 
   function openInvestorContactForm() {
-    if(window.screen.width < 1200){
+    if(window.screen.width <=600){
         true
         }
         else {
     document.getElementById("openInvestorForm").style.display = "block";
     document.getElementById("closeInvestorForm").style.display = "none";
   }
-} 
+}  
+
   function closeInvestorContactForm() {
     document.getElementById("openInvestorForm").style.display = "none";
     document.getElementById("closeInvestorForm").style.display = "block";
